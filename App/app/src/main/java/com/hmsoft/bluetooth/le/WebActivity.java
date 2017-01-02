@@ -31,7 +31,7 @@ public class WebActivity extends Activity {
         webView.getSettings().setUseWideViewPort(true);
         webView.getSettings().setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
         webView.getSettings().setLoadWithOverviewMode(true);
-        webView.loadUrl("http://women.zaiyiqiba.com/jjbirthday.html");
+        webView.loadUrl("http://zhangjinyang.com.cn/jj/");
 
     }
 }

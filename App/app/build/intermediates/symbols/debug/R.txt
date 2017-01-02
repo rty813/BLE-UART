@@ -342,8 +342,7 @@ int layout mainlayout 0x7f04001a
 int layout support_simple_spinner_dropdown_item 0x7f04001b
 int menu gatt_services 0x7f0e0000
 int menu main 0x7f0e0001
-int mipmap ic_btn 0x7f030000
-int mipmap ic_launcher 0x7f030001
+int mipmap ic_launcher 0x7f030000
 int raw jj 0x7f060000
 int string abc_action_bar_home_description 0x7f0d0000
 int string abc_action_bar_up_description 0x7f0d0001

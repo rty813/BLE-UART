@@ -35,6 +35,9 @@ limitations under the License.
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -57,6 +60,7 @@ limitations under the License.
             android:name="com.hmsoft.bluetooth.le.BluetoothLeService"
             android:enabled="true" />
 
+        <activity android:name="com.hmsoft.bluetooth.le.WebActivity"></activity>
     </application>
 
 </manifest>

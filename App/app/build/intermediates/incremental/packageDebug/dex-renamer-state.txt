@@ -1,7 +1,7 @@
-#Mon Jan 02 17:38:26 CST 2017
-base.0=C\:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_faa14a61331f91356fbd4c0b084159a989016db4
+#Mon Jan 02 20:55:25 CST 2017
+base.0=C\:\\Users\\zhang\\Documents\\JJBirthday_2017\\App\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_7a3cd4e9ce179ebc4b7247bfa056ac8e7a9006b9
 renamed.1=classes2.dex
 renamed.0=classes.dex
-file.1=C\:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_b876226814f117a7a1938b5b76c844aece6538ba\\classes.dex
-base.1=C\:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_b876226814f117a7a1938b5b76c844aece6538ba
-file.0=C\:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_faa14a61331f91356fbd4c0b084159a989016db4\\classes.dex
+file.1=C\:\\Users\\zhang\\Documents\\JJBirthday_2017\\App\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_0ec23ecb5b751678008315e707f8028d78a8b591\\classes.dex
+base.1=C\:\\Users\\zhang\\Documents\\JJBirthday_2017\\App\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_0ec23ecb5b751678008315e707f8028d78a8b591
+file.0=C\:\\Users\\zhang\\Documents\\JJBirthday_2017\\App\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_7a3cd4e9ce179ebc4b7247bfa056ac8e7a9006b9\\classes.dex

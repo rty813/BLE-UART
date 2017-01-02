@@ -160,25 +160,9 @@ public class DeviceControlActivity extends Activity{
                     @Override
                     public void onAnimationEnd(Animation animation) {
                         btnConnect.setVisibility(View.GONE);
+                        startActivity(new Intent(DeviceControlActivity.this, WebActivity.class));
                         btnStart.setVisibility(View.VISIBLE);
-                        Animation startAnimation = AnimationUtils.loadAnimation(DeviceControlActivity.this, R.anim.bt_alpha_in);
-                        startAnimation.setAnimationListener(new Animation.AnimationListener() {
-                            @Override
-                            public void onAnimationStart(Animation animation) {
-
-                            }
-
-                            @Override
-                            public void onAnimationEnd(Animation animation) {
-                                btnStart.setEnabled(true);
-                            }
-
-                            @Override
-                            public void onAnimationRepeat(Animation animation) {
-
-                            }
-                        });
-                        btnStart.startAnimation(startAnimation);
+                        btnStart.startAnimation(AnimationUtils.loadAnimation(DeviceControlActivity.this, R.anim.bt_alpha_in_slow));
                     }
 
                     @Override
@@ -194,8 +178,8 @@ public class DeviceControlActivity extends Activity{
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        //this.unregisterReceiver(mGattUpdateReceiver);
-        //unbindService(mServiceConnection);
+        this.unregisterReceiver(mGattUpdateReceiver);
+        unbindService(mServiceConnection);
         if(mBluetoothLeService != null)
         {
             mBluetoothLeService.close();

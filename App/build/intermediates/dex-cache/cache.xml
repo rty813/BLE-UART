@@ -3,6 +3,60 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\zhang\AndroidStudioProjects\BLE-UART\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="747e441bb3b65a238e5b8a4d9aa43f5e80ce94eb">
+        <dex dex="C:\Users\zhang\AndroidStudioProjects\BLE-UART\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_b876226814f117a7a1938b5b76c844aece6538ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\zhang\Documents\JJBirthday_2017\App\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="392768f3df44105675ee892dc3096608180d0dae">
+        <dex dex="C:\Users\zhang\Documents\JJBirthday_2017\App\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0ec23ecb5b751678008315e707f8028d78a8b591\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\zhang\Documents\JJBirthday_2017\App\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\18.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8f11f56e350eacabf2273f646d981356eea0ed77">
+        <dex dex="C:\Users\zhang\Documents\JJBirthday_2017\App\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-18.0.0_1e1bd06efb75408350b36a4b4676142e2ab0e1a3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\zhang\Documents\JJBirthday_2017\App\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f7452f231452400793c56fff3db5dbc3fba7dd59">
+        <dex dex="C:\Users\zhang\Documents\JJBirthday_2017\App\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_7a3cd4e9ce179ebc4b7247bfa056ac8e7a9006b9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\zhang\AndroidStudioProjects\DeviceScanActivity\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="765228a68e62d01659430183e4041285760c1341">
+        <dex dex="C:\Users\zhang\AndroidStudioProjects\DeviceScanActivity\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_4e69065652aa6a29035db8de9477de666a1358d8\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zhang\Documents\JJBirthday_2017\App\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\18.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8f11f56e350eacabf2273f646d981356eea0ed77">
+        <dex dex="C:\Users\zhang\Documents\JJBirthday_2017\App\app\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-18.0.0_1e1bd06efb75408350b36a4b4676142e2ab0e1a3.jar" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\zhang\AndroidStudioProjects\BLE-UART\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -20,13 +74,13 @@
         <dex dex="C:\Users\zhang\AndroidStudioProjects\DeviceScanActivity\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_1e428cdbaba4c370636a7480abfbf40c04905797\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\zhang\AndroidStudioProjects\BLE-UART\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\zhang\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="747e441bb3b65a238e5b8a4d9aa43f5e80ce94eb">
-        <dex dex="C:\Users\zhang\AndroidStudioProjects\BLE-UART\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_b876226814f117a7a1938b5b76c844aece6538ba\classes.dex" />
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="C:\Users\zhang\Documents\JJBirthday_2017\App\app\build\intermediates\pre-dexed\release\support-v4-18.0.0_de5a315f0ce6432da22cfa3869d5e13cfeeb5981.jar" />
     </item>
     <item
         is-multidex="true"
@@ -36,15 +90,6 @@
         revision="25.0.1"
         sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
         <dex dex="C:\Users\zhang\AndroidStudioProjects\BLE-UART\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-18.0.0_de5a315f0ce6432da22cfa3869d5e13cfeeb5981\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\zhang\AndroidStudioProjects\DeviceScanActivity\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="765228a68e62d01659430183e4041285760c1341">
-        <dex dex="C:\Users\zhang\AndroidStudioProjects\DeviceScanActivity\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_4e69065652aa6a29035db8de9477de666a1358d8\classes.dex" />
     </item>
 
 </items>

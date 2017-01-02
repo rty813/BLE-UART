@@ -1,4 +1,4 @@
-#Mon Jan 02 20:55:25 CST 2017
+#Mon Jan 02 23:28:20 CST 2017
 base.0=C\:\\Users\\zhang\\Documents\\JJBirthday_2017\\App\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_7a3cd4e9ce179ebc4b7247bfa056ac8e7a9006b9
 renamed.1=classes2.dex
 renamed.0=classes.dex

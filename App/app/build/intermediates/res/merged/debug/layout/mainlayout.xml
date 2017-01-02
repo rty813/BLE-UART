@@ -8,16 +8,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/videoView"
         android:layout_alignParentStart="true"
-         />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnConnect"
-        android:background="@drawable/btnpic"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="130dp" />
+        android:visibility="gone"/>
 
     <Button
         android:background="@drawable/btnlove"
@@ -29,6 +20,15 @@
         android:layout_marginTop="120dp"
         android:layout_marginBottom="120dp"
         android:visibility="gone" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConnect"
+        android:background="@drawable/btnpic"
+        android:layout_marginTop="131dp"
+        android:layout_below="@+id/videoView"
+        android:layout_alignParentStart="true"/>
 
 
 </RelativeLayout>

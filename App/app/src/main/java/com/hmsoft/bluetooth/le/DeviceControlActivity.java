@@ -27,6 +27,7 @@ import android.widget.Toast;
 import android.widget.VideoView;
 
 import java.io.File;
+import java.io.IOException;
 
 
 /**
@@ -35,7 +36,7 @@ import java.io.File;
  * communicates with {@code BluetoothLeService}, which in turn interacts with the
  * Bluetooth LE API.
  */
-public class DeviceControlActivity extends Activity{
+public class DeviceControlActivity extends Activity {
     private final static String TAG = DeviceControlActivity.class.getSimpleName();
 
     public static final String EXTRAS_DEVICE_NAME = "DEVICE_NAME";
@@ -48,6 +49,7 @@ public class DeviceControlActivity extends Activity{
     private Button btnStart;
     private VideoView videoView;
     private Button btnConnect;
+    private MediaPlayer player;
 
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
 
@@ -107,21 +109,21 @@ public class DeviceControlActivity extends Activity{
         Log.d(TAG, "Try to bindService=" + bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE));
         registerReceiver(mGattUpdateReceiver, makeGattUpdateIntentFilter());
 
+        player = MediaPlayer.create(this, R.raw.jj);
+        player.setVolume(0.2f,0.2f);
+        player.start();
+
+
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(!mConnected) return;
+                mBluetoothLeService.WriteValue("1\r\n");
                 File file = new File(Environment.getExternalStorageDirectory().getPath() + "/jj.mp4");
                 if (file.exists()){
                     videoView.setVideoPath(file.getAbsolutePath());
                     System.out.println(file.getAbsolutePath());
                 }
-                videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mediaPlayer) {
-                        if(!mConnected) return;
-                        mBluetoothLeService.WriteValue("1\r\n");
-                    }
-                });
                 Animation startAnimation = AnimationUtils.loadAnimation(DeviceControlActivity.this, R.anim.bt_alpha_out);
                 startAnimation.setAnimationListener(new Animation.AnimationListener() {
                     @Override
@@ -203,4 +205,6 @@ public class DeviceControlActivity extends Activity{
         intentFilter.addAction(BluetoothDevice.ACTION_UUID);
         return intentFilter;
     }
+
+
 }

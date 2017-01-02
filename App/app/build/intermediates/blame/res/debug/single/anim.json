@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\build\\intermediates\\res\\merged\\debug\\anim\\bt_alpha_out.xml",
+        "source": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\anim\\bt_alpha_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\build\\intermediates\\res\\merged\\debug\\anim\\bt_alpha_in.xml",
+        "source": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\anim\\bt_alpha_in.xml"
+    }
+]

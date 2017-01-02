@@ -1,26 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/appbackground"
     android:layout_width="match_parent" android:layout_height="match_parent">
-
-    <EditText
+    <!--android:layout_marginStart="55dp" />-->
+    <VideoView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:layout_centerVertical="true"
+        android:id="@+id/videoView"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="54dp"
-        android:id="@+id/editText" />
+         />
 
     <Button
-        android:text="Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_above="@+id/editText"
-        android:layout_alignStart="@+id/editText"
-        android:layout_marginStart="18dp"
-        android:layout_marginBottom="71dp" />
+        android:id="@+id/btnConnect"
+        android:background="@drawable/btnpic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp" />
+
+    <Button
+        android:background="@drawable/btnlove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStart"
+        android:layout_below="@+id/btnConnect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="120dp"
+        android:visibility="gone"
+        android:enabled="false" />
+
 
 </RelativeLayout>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_btn.png",
+        "source": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\mipmap-xhdpi\\ic_btn.png"
+    },
+    {
+        "merged": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    }
+]

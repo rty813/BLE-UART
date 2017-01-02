@@ -2,5 +2,17 @@
     {
         "merged": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher.png",
         "source": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\drawable\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btnlove.png",
+        "source": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\drawable\\btnlove.png"
+    },
+    {
+        "merged": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\appbackground.jpg",
+        "source": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\drawable\\appbackground.jpg"
+    },
+    {
+        "merged": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btnpic.png",
+        "source": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\drawable\\btnpic.png"
     }
 ]

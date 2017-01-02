@@ -7,36 +7,17 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 44,
-                    "endOffset": 95
+                    "endColumn": 49,
+                    "endOffset": 100
                 },
                 "from": {
-                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 16,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 702,
-                        "endColumn": 44,
-                        "endOffset": 742
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 100,
-                    "endColumn": 56,
-                    "endOffset": 152
-                },
-                "from": {
-                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 748,
-                        "endColumn": 56,
-                        "endOffset": 800
+                        "startOffset": 19,
+                        "endColumn": 49,
+                        "endOffset": 64
                     }
                 }
             },
@@ -44,94 +25,66 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 157,
-                    "endColumn": 47,
-                    "endOffset": 200
+                    "startOffset": 290,
+                    "endColumn": 39,
+                    "endOffset": 325
                 },
                 "from": {
-                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 1017,
-                        "endColumn": 47,
-                        "endOffset": 1060
-                    }
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 205,
-                    "endColumn": 53,
-                    "endOffset": 254
+                    "startOffset": 330,
+                    "endColumn": 56,
+                    "endOffset": 382
                 },
                 "from": {
-                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 23,
-                        "startColumn": 4,
-                        "startOffset": 1066,
-                        "endColumn": 53,
-                        "endOffset": 1115
-                    }
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 259,
-                    "endColumn": 82,
-                    "endOffset": 337
+                    "startOffset": 387,
+                    "endColumn": 47,
+                    "endOffset": 430
                 },
                 "from": {
-                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 25,
-                        "startColumn": 4,
-                        "startOffset": 1172,
-                        "endColumn": 82,
-                        "endOffset": 1250
-                    }
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 342,
-                    "endColumn": 44,
-                    "endOffset": 382
+                    "startOffset": 435,
+                    "endColumn": 53,
+                    "endOffset": 484
                 },
                 "from": {
-                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 806,
-                        "endColumn": 44,
-                        "endOffset": 846
-                    }
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 387,
-                    "endColumn": 64,
-                    "endOffset": 447
+                    "startOffset": 489,
+                    "endColumn": 53,
+                    "endOffset": 538
                 },
                 "from": {
                     "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 19,
+                        "startLine": 39,
                         "startColumn": 4,
-                        "startOffset": 852,
-                        "endColumn": 64,
-                        "endOffset": 912
+                        "startOffset": 1767,
+                        "endColumn": 53,
+                        "endOffset": 1816
                     }
                 }
             },
@@ -139,18 +92,18 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 452,
-                    "endColumn": 46,
-                    "endOffset": 494
+                    "startOffset": 543,
+                    "endColumn": 56,
+                    "endOffset": 595
                 },
                 "from": {
                     "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 20,
+                        "startLine": 40,
                         "startColumn": 4,
-                        "startOffset": 918,
-                        "endColumn": 46,
-                        "endOffset": 960
+                        "startOffset": 1822,
+                        "endColumn": 56,
+                        "endOffset": 1874
                     }
                 }
             },
@@ -158,189 +111,228 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 499,
-                    "endColumn": 43,
-                    "endOffset": 538
+                    "startOffset": 600,
+                    "endColumn": 82,
+                    "endOffset": 678
                 },
                 "from": {
-                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 34,
-                        "startColumn": 4,
-                        "startOffset": 1525,
-                        "endColumn": 43,
-                        "endOffset": 1564
-                    }
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 543,
-                    "endColumn": 46,
-                    "endOffset": 585
+                    "startOffset": 683,
+                    "endColumn": 44,
+                    "endOffset": 723
                 },
                 "from": {
-                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 35,
-                        "startColumn": 4,
-                        "startOffset": 1570,
-                        "endColumn": 46,
-                        "endOffset": 1612
-                    }
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 590,
-                    "endColumn": 40,
-                    "endOffset": 626
+                    "startOffset": 728,
+                    "endColumn": 64,
+                    "endOffset": 788
                 },
                 "from": {
-                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 36,
-                        "startColumn": 4,
-                        "startOffset": 1618,
-                        "endColumn": 40,
-                        "endOffset": 1654
-                    }
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 631,
-                    "endColumn": 40,
-                    "endOffset": 667
+                    "startOffset": 793,
+                    "endColumn": 46,
+                    "endOffset": 835
                 },
                 "from": {
-                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 37,
-                        "startColumn": 4,
-                        "startOffset": 1660,
-                        "endColumn": 40,
-                        "endOffset": 1696
-                    }
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 672,
-                    "endColumn": 49,
-                    "endOffset": 717
+                    "startOffset": 840,
+                    "endColumn": 43,
+                    "endOffset": 879
                 },
                 "from": {
-                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 966,
-                        "endColumn": 49,
-                        "endOffset": 1011
-                    }
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 722,
-                    "endColumn": 37,
-                    "endOffset": 755
+                    "startOffset": 884,
+                    "endColumn": 46,
+                    "endOffset": 926
                 },
                 "from": {
-                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 31,
-                        "startColumn": 4,
-                        "startOffset": 1459,
-                        "endColumn": 37,
-                        "endOffset": 1492
-                    }
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 760,
-                    "endColumn": 49,
-                    "endOffset": 805
+                    "startOffset": 931,
+                    "endColumn": 40,
+                    "endOffset": 967
                 },
                 "from": {
-                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 24,
-                        "startColumn": 4,
-                        "startOffset": 1121,
-                        "endColumn": 49,
-                        "endOffset": 1166
-                    }
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 810,
-                    "endColumn": 73,
-                    "endOffset": 879
+                    "startOffset": 972,
+                    "endColumn": 40,
+                    "endOffset": 1008
                 },
                 "from": {
-                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 28,
-                        "startColumn": 4,
-                        "startOffset": 1317,
-                        "endColumn": 73,
-                        "endOffset": 1386
-                    }
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 884,
-                    "endColumn": 57,
-                    "endOffset": 937
+                    "startOffset": 1013,
+                    "endColumn": 49,
+                    "endOffset": 1058
                 },
                 "from": {
-                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 27,
-                        "startColumn": 4,
-                        "startOffset": 1258,
-                        "endColumn": 57,
-                        "endOffset": 1311
-                    }
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 942,
-                    "endColumn": 59,
-                    "endOffset": 997
+                    "startOffset": 1063,
+                    "endColumn": 37,
+                    "endOffset": 1096
+                },
+                "from": {
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1101,
+                    "endColumn": 72,
+                    "endOffset": 1169
                 },
                 "from": {
                     "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 29,
+                        "startLine": 38,
                         "startColumn": 4,
-                        "startOffset": 1392,
-                        "endColumn": 59,
-                        "endOffset": 1447
+                        "startOffset": 1693,
+                        "endColumn": 72,
+                        "endOffset": 1761
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1174,
+                    "endColumn": 49,
+                    "endOffset": 1219
+                },
+                "from": {
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1224,
+                    "endColumn": 73,
+                    "endOffset": 1293
+                },
+                "from": {
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1298,
+                    "endColumn": 57,
+                    "endOffset": 1351
+                },
+                "from": {
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1356,
+                    "endColumn": 59,
+                    "endOffset": 1411
+                },
+                "from": {
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1416,
+                    "endLine": 27,
+                    "endColumn": 12,
+                    "endOffset": 1575
+                },
+                "from": {
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 487,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 648
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1580,
+                    "endLine": 34,
+                    "endColumn": 12,
+                    "endOffset": 2034
+                },
+                "from": {
+                    "file": "C:\\Users\\zhang\\AndroidStudioProjects\\BLE-UART\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 19,
+                        "endLine": 8,
+                        "endColumn": 12,
+                        "endOffset": 479
                     }
                 }
             }

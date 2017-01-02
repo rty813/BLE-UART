@@ -1,25 +1,32 @@
-        package com.hmsoft.bluetooth.le;
+package com.hmsoft.bluetooth.le;
 
-        import com.example.bluetooth.le.R;
+import com.example.bluetooth.le.R;
 
-        import android.app.Activity;
-        import android.bluetooth.BluetoothDevice;
-        import android.content.BroadcastReceiver;
-        import android.content.ComponentName;
-        import android.content.Context;
-        import android.content.Intent;
-        import android.content.IntentFilter;
-        import android.content.ServiceConnection;
-        import android.os.Bundle;
-        import android.os.IBinder;
-        import android.util.Log;
-        import android.view.Menu;
-        import android.view.MenuItem;
-        import android.view.View;
-        import android.view.inputmethod.InputMethodManager;
-        import android.widget.Button;
-        import android.widget.EditText;
-        import android.widget.Toast;
+import android.animation.Animator;
+import android.app.Activity;
+import android.bluetooth.BluetoothClass;
+import android.bluetooth.BluetoothDevice;
+import android.content.BroadcastReceiver;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.ServiceConnection;
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.os.Environment;
+import android.os.IBinder;
+import android.util.Log;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.Toast;
+import android.widget.VideoView;
+
+import java.io.File;
 
 
 /**
@@ -28,7 +35,7 @@
  * communicates with {@code BluetoothLeService}, which in turn interacts with the
  * Bluetooth LE API.
  */
-public class DeviceControlActivity extends Activity {
+public class DeviceControlActivity extends Activity{
     private final static String TAG = DeviceControlActivity.class.getSimpleName();
 
     public static final String EXTRAS_DEVICE_NAME = "DEVICE_NAME";
@@ -38,10 +45,10 @@ public class DeviceControlActivity extends Activity {
     private String mDeviceAddress;
     private BluetoothLeService mBluetoothLeService;
     private boolean mConnected = false;
-    private EditText edtSend;
+    private Button btnStart;
+    private VideoView videoView;
+    private Button btnConnect;
 
-    private Button btnSend;
-    // Code to manage Service lifecycle.
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
 
         @Override
@@ -53,8 +60,6 @@ public class DeviceControlActivity extends Activity {
             }
 
             Log.e(TAG, "mBluetoothLeService is okay");
-            // Automatically connects to the device upon successful start-up initialization.
-            //mBluetoothLeService.connect(mDeviceAddress);
         }
 
         @Override
@@ -63,12 +68,6 @@ public class DeviceControlActivity extends Activity {
         }
     };
 
-    // Handles various events fired by the Service.
-    // ACTION_GATT_CONNECTED: connected to a GATT server.
-    // ACTION_GATT_DISCONNECTED: disconnected from a GATT server.
-    // ACTION_GATT_SERVICES_DISCOVERED: discovered GATT services.
-    // ACTION_DATA_AVAILABLE: received data from the device.  This can be a result of read
-    //                        or notification operations.
     private final BroadcastReceiver mGattUpdateReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -78,12 +77,10 @@ public class DeviceControlActivity extends Activity {
             } else if (BluetoothLeService.ACTION_GATT_DISCONNECTED.equals(action)) { //断开连接
                 mConnected = false;
                 invalidateOptionsMenu();
-                btnSend.setEnabled(false);
             }else if(BluetoothLeService.ACTION_GATT_SERVICES_DISCOVERED.equals(action)) //可以开始干活了
             {
                 mConnected = true;
                 ShowDialog();
-                btnSend.setEnabled(true);
                 Log.e(TAG, "In what we need");
                 invalidateOptionsMenu();
             }
@@ -94,27 +91,104 @@ public class DeviceControlActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {                                        //初始化
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.mainlayout);
 
-        final Intent intent = getIntent();
+        btnConnect = (Button) findViewById(R.id.btnConnect);
+        videoView = (VideoView) findViewById(R.id.videoView);
+        btnStart = (Button) findViewById(R.id.btnStart);
+
         mDeviceName = "LED";
         mDeviceAddress = "00:15:83:00:77:AF";
         System.out.println(mDeviceName + " " + mDeviceAddress);
 
-        // Sets up UI references.
-        edtSend = (EditText) this.findViewById(R.id.editText);
-
-        btnSend = (Button) this.findViewById(R.id.button);
-        btnSend.setOnClickListener(new ClickEvent());
-        btnSend.setEnabled(false);
-
-
-        getActionBar().setTitle(mDeviceName);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
         Intent gattServiceIntent = new Intent(this, BluetoothLeService.class);
         Log.d(TAG, "Try to bindService=" + bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE));
-
         registerReceiver(mGattUpdateReceiver, makeGattUpdateIntentFilter());
+
+        btnStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                File file = new File(Environment.getExternalStorageDirectory().getPath() + "/jj.mp4");
+                if (file.exists()){
+                    videoView.setVideoPath(file.getAbsolutePath());
+                    System.out.println(file.getAbsolutePath());
+                }
+                videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mediaPlayer) {
+                        if(!mConnected) return;
+                        mBluetoothLeService.WriteValue("1\r\n");
+                    }
+                });
+                Animation startAnimation = AnimationUtils.loadAnimation(DeviceControlActivity.this, R.anim.bt_alpha_out);
+                startAnimation.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        btnStart.setVisibility(View.GONE);
+                        videoView.setVisibility(View.VISIBLE);
+                        videoView.start();
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+
+                    }
+                });
+                btnStart.startAnimation(startAnimation);
+            }
+        });
+
+        btnConnect.startAnimation(AnimationUtils.loadAnimation(DeviceControlActivity.this, R.anim.bt_alpha_in));
+        btnConnect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mBluetoothLeService.connect(mDeviceAddress);
+                Animation connectAnimate = AnimationUtils.loadAnimation(DeviceControlActivity.this, R.anim.bt_alpha_out);
+                connectAnimate.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        btnConnect.setVisibility(View.GONE);
+                        btnStart.setVisibility(View.VISIBLE);
+                        Animation startAnimation = AnimationUtils.loadAnimation(DeviceControlActivity.this, R.anim.bt_alpha_in);
+                        startAnimation.setAnimationListener(new Animation.AnimationListener() {
+                            @Override
+                            public void onAnimationStart(Animation animation) {
+
+                            }
+
+                            @Override
+                            public void onAnimationEnd(Animation animation) {
+                                btnStart.setEnabled(true);
+                            }
+
+                            @Override
+                            public void onAnimationRepeat(Animation animation) {
+
+                            }
+                        });
+                        btnStart.startAnimation(startAnimation);
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+
+                    }
+                });
+                btnConnect.startAnimation(connectAnimate);
+            }
+        });
     }
 
     @Override
@@ -130,68 +204,11 @@ public class DeviceControlActivity extends Activity {
         Log.d(TAG, "We are in destroy");
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.gatt_services, menu);
-        if (mConnected) {
-            menu.findItem(R.id.menu_connect).setVisible(false);
-            menu.findItem(R.id.menu_disconnect).setVisible(true);
-        } else {
-            menu.findItem(R.id.menu_connect).setVisible(true);
-            menu.findItem(R.id.menu_disconnect).setVisible(false);
-        }
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {                              //点击按钮
-        switch(item.getItemId()) {
-            case R.id.menu_connect:
-                mBluetoothLeService.connect(mDeviceAddress);
-                return true;
-            case R.id.menu_disconnect:
-                mBluetoothLeService.disconnect();
-                return true;
-            case android.R.id.home:
-                if(mConnected)
-                {
-                    mBluetoothLeService.disconnect();
-                    mConnected = false;
-                }
-                onBackPressed();
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
     private void ShowDialog()
     {
-        Toast.makeText(this, "连接成功，现在可以正常通信！", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "姜姜！生日快乐！", Toast.LENGTH_LONG).show();
     }
 
-    // 按钮事件
-    class ClickEvent implements View.OnClickListener {
-        @Override
-        public void onClick(View v) {
-            System.out.println("onClick");
-            String sendstr = null;
-            switch (v.getId()){
-                case R.id.button:
-                    if(!mConnected) return;
-                    if (edtSend.length() < 1) {
-                        Toast.makeText(DeviceControlActivity.this, "请输入要发送的内容", Toast.LENGTH_SHORT).show();
-                        return;
-                    }
-                    sendstr = edtSend.getText().toString() + "\r\n";
-                    mBluetoothLeService.WriteValue(sendstr);
-                    InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                    if(imm.isActive())
-                        imm.hideSoftInputFromWindow(edtSend.getWindowToken(), 0);
-                    //todo Send data
-                    break;
-            }
-        }
-    }
 
     private static IntentFilter makeGattUpdateIntentFilter() {                        //注册接收的事件
         final IntentFilter intentFilter = new IntentFilter();

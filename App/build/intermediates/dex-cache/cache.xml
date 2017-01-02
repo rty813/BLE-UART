@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="c61525ef77878a968fb20d7da2f7e2a63be11828">
+        sha1="8ac144fb95bfdbf14eb2355bc34d99d5e95d2fc3">
         <dex dex="C:\Users\zhang\AndroidStudioProjects\BLE-UART\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_faa14a61331f91356fbd4c0b084159a989016db4\classes.dex" />
     </item>
     <item
@@ -25,8 +25,17 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="f4b6fa68fe86096555b5f23759080f5264f047a9">
+        sha1="747e441bb3b65a238e5b8a4d9aa43f5e80ce94eb">
         <dex dex="C:\Users\zhang\AndroidStudioProjects\BLE-UART\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_b876226814f117a7a1938b5b76c844aece6538ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\zhang\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="C:\Users\zhang\AndroidStudioProjects\BLE-UART\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-18.0.0_de5a315f0ce6432da22cfa3869d5e13cfeeb5981\classes.dex" />
     </item>
     <item
         is-multidex="true"

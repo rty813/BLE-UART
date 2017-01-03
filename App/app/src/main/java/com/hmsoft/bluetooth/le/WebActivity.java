@@ -1,10 +1,7 @@
 package com.hmsoft.bluetooth.le;
 
 import android.app.Activity;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.webkit.WebSettings;
@@ -12,9 +9,6 @@ import android.webkit.WebView;
 
 import com.example.bluetooth.le.R;
 
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 public class WebActivity extends Activity {
     private WebView webView;
@@ -31,7 +25,7 @@ public class WebActivity extends Activity {
         webView.getSettings().setUseWideViewPort(true);
         webView.getSettings().setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
         webView.getSettings().setLoadWithOverviewMode(true);
-        webView.loadUrl("http://zhangjinyang.com.cn/jj/");
+        webView.loadUrl("file:///android_asset/index.html");
 
     }
 }

@@ -111,6 +111,7 @@ public class DeviceControlActivity extends Activity {
 
         player = MediaPlayer.create(this, R.raw.jj);
         player.setVolume(0.2f,0.2f);
+        player.setLooping(true);
         player.start();
 
 
